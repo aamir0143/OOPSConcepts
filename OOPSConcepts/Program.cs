@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OOPSConcepts.ClassAndObject;
 using OOPSConcepts.Inheritance;
+using OOPSConcepts.Polymorphism.MethodOverloading;
+using OOPSConcepts.Polymorphism.MethodOverriding;
 using System;
 
 namespace OOPSConcepts
@@ -22,6 +24,16 @@ namespace OOPSConcepts
             car.brand = "BMW";
             car.honk();//Call the vehicle method.
             car.start();//Call the car method.
+            Console.WriteLine("Method Overloading........");
+            Addition addition = new Addition();
+            addition.SumOfNumbers(10, 20, 45);//Call the method
+            Console.WriteLine("Method Overriding..........");
+            //Call the Child Class
+            PartTimeEmployee partTime = new PartTimeEmployee();
+            partTime.GetSalary();
+            //Call the Parent Class
+            Employee employee = new PartTimeEmployee();
+            employee.GetSalary();
             Console.ReadLine();
         }
     }
