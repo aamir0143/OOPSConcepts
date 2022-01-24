@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OOPSConcepts.ClassAndObject;
-
+using OOPSConcepts.Inheritance;
 using System;
 
 namespace OOPSConcepts
@@ -17,6 +17,11 @@ namespace OOPSConcepts
             labsky.size = 15;
             labsky.Eat();//Call the Method
             Console.WriteLine("Labsky details : breed:{0},color:{1},Age:{2},size{3}",labsky.breed,labsky.color,labsky.Age,labsky.size);
+            Console.WriteLine("Inheritance...........");
+            Car car = new Car();
+            car.brand = "BMW";
+            car.honk();//Call the vehicle method.
+            car.start();//Call the car method.
             Console.ReadLine();
         }
     }
