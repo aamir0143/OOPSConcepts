@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OOPSConcepts.ClassAndObject;
+using OOPSConcepts.Encapsulation;
 using OOPSConcepts.Inheritance;
+using OOPSConcepts.Polymorphism;
 using OOPSConcepts.Polymorphism.MethodOverloading;
 using OOPSConcepts.Polymorphism.MethodOverriding;
 using System;
@@ -34,6 +36,10 @@ namespace OOPSConcepts
             //Call the Parent Class
             Employee employee = new PartTimeEmployee();
             employee.GetSalary();
+            Console.WriteLine("Encapsulation......");
+            Account account = new Account();
+            account.SetBalance(1000);
+            account.GetBalance();
             Console.ReadLine();
         }
     }
