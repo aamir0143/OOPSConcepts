@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using OOPSConcepts.Abstraction;
 using OOPSConcepts.ClassAndObject;
 using OOPSConcepts.Encapsulation;
 using OOPSConcepts.Inheritance;
@@ -40,6 +41,12 @@ namespace OOPSConcepts
             Account account = new Account();
             account.SetBalance(1000);
             account.GetBalance();
+            Console.WriteLine("Abstraction...........");
+            Pig tiger = new Pig(); //Create a derived class object.
+            tiger.AnimalSound(); //Call the Abstract Method.
+            Pig.Sleep();         //Call the Regular Method
+            tiger.height = 25;
+            Console.WriteLine(" Height is : " + tiger.height);
             Console.ReadLine();
         }
     }
